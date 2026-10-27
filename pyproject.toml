@@ -1,0 +1,23 @@
+[project]
+name = "vampyre-mirror"
+version = "0.1.0"
+description = "Webcam mirror in which you have no reflection — like a vampire"
+readme = "README.md"
+authors = [
+    { name = "Denis", email = "yum-yab-dev@pm.me" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.4",
+    "opencv-python>=5.0.0.93",
+    "torch>=2.14.1",
+    "torchvision>=0.29.1",
+    "transformers>=5.21.0",
+]
+
+[project.scripts]
+vampyre-mirror = "vampyre_mirror:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
